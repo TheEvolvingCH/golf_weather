@@ -12,7 +12,7 @@ $(document).ready(function() {
     var zip = $searchField.val();
     var apiKey = "758526980f7d550ed8ca4650624113cb";
     var units = "imperial";
-    var weatherAPI = `http://api.openweathermap.org/data/2.5/weather?zip=${zip}&units=${units}&APPID=${apiKey}`;
+    var weatherAPI = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?zip=${zip}&units=${units}&APPID=${apiKey}`;
 
     function displayWeather(data) {
       var currentTemp = Math.round(parseFloat(data.main.temp));

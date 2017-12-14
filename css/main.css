@@ -1,0 +1,236 @@
+* {
+  font-family: 'Bungee', cursive;
+  color: #FFF;
+  background-color: black;
+  margin: 0;
+  box-sizing: border-box;  
+}
+
+
+#mainWrapper {
+  height: 100vh;
+}
+
+
+#app, form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column; 
+  -ms-flex-direction: column; 
+  flex-direction: column;
+  -webkit-align-items: center; 
+  -ms-flex-align: center; 
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+
+.title, #welcomeBack {
+  font-size: 7vh; 
+  padding: 1em;
+}
+
+
+#welcomeBack {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column; 
+  -ms-flex-direction: column; 
+  flex-direction: column;
+  -webkit-align-items: center; 
+  -ms-flex-align: center; 
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#backGreeting {
+  line-height: 1.25;
+}
+
+
+#notName {
+  font-size: 2vh;
+  width: 150px;
+  margin-top: 2em;
+}
+
+
+#notName:hover {
+  cursor: pointer;
+}
+
+
+input, #notName {
+  color: black;
+  background-color: #FFF;
+  border-radius: 5px;
+}
+
+
+input:hover {
+  cursor: pointer;
+}
+
+
+.buttons {
+  margin-top: 2em; 
+}
+
+
+#weatherResults {
+  display: -webkit-grid;
+  display: -ms-grid;
+  display: grid;
+  -webkit-grid-template-columns: 1fr 1fr;
+  -webkit-grid-template-rows: auto 2fr 1fr 1fr;
+  -webkit-grid-template-areas:
+    "title title"
+    "current current"
+    "low high"
+    "decision decision"
+  -ms-grid-columns: 1fr 1fr;
+  -ms-grid-rows: auto 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 2fr 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "current current"
+    "low high"
+    "decision decision"
+}
+
+
+#weatherTitle {
+  grid-area: title;
+  font-size: 4vh;
+  padding: 1em;
+  line-height: 1.5;
+}
+
+
+#current {
+  -webkit-grid-area: current;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: current;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column; 
+  -ms-flex-direction: column; 
+  flex-direction: column;
+  -webkit-align-items: center; 
+  -ms-flex-align: center; 
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 2vh;
+  line-height: 1.25;
+}
+
+
+.weatherStats {
+  font-size: 15vh;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+#weatherDescription {
+  font-size: 4vh;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+#lowTemp {
+  -webkit-grid-area: low;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: low;
+}
+
+
+#highTemp {
+  -webkit-grid-area: high;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: high;
+}
+
+
+.high-low {
+  border: 1px solid #FFF;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column; 
+  -ms-flex-direction: column; 
+  flex-direction: column;
+  -webkit-align-items: center; 
+  -ms-flex-align: center; 
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.25;
+  font-size: 3vh;
+}
+
+
+#decisionButtons {
+  -webkit-grid-area: decision;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: decision;
+  padding: 1em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+} 
+
+
+.decisionButton {
+  height: 85px;
+}
+
+
+.photos {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  -webkit-align-items: center; 
+  -ms-flex-align: center; 
+  align-items: center;
+}
+
+
+.image {
+  height: 275px;
+  width: 250px;
+  border: 1px solid #FFF;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center; 
+  -ms-flex-align: center; 
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 1em;
+}

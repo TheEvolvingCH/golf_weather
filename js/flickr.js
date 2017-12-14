@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(document).on('click', '.decisionButton', function () {
     let button = $(this).val();
     if (button === "Nah, I'm Good") {
-      var flickrAPI = "https://cors-anywhere.herokuapp.com/http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+      var flickrAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
       var flickrOptions = { 
         tags: "golf course",
         format: "json",

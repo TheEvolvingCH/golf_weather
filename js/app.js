@@ -21,9 +21,12 @@ $(document).ready(function() {
           <form id="nameForm">
             <input type="text" name="name" id="nameEntry">
             <input type="submit" value="Next" id="nameButton" class="buttons">
-          </form></div>`); 
-        clearInterval(transitions);
-      }, 6100);
+          </form></div>`);
+      }, 6000);
+		
+	   setTimeout(() => {
+          clearInterval(transitions);
+      }, 6100);	
     } else {
       $('#app').html(`<div id="welcomeBack"><p id="backGreeting">Welcome back, ${nameCheck}</p>
       <p id="notName">Not ${nameCheck}?</p>

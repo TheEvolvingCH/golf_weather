@@ -23,7 +23,7 @@ $(document).ready(function() {
             <input type="submit" value="Next" id="nameButton" class="buttons">
           </form></div>`); 
         clearInterval(transitions);
-      }, 6000);
+      }, 6100);
     } else {
       $('#app').html(`<div id="welcomeBack"><p id="backGreeting">Welcome back, ${nameCheck}</p>
       <p id="notName">Not ${nameCheck}?</p>

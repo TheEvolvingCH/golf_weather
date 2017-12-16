@@ -86,7 +86,7 @@ input:hover {
 }
 
 
-#weatherSearch {
+#weatherSearch, #nameSection {
   font-size: 4vh;
   padding: 1em;
 }
